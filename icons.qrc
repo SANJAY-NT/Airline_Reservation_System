@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file>icons/admin.jpg</file>
+		<file>icons/airline.jpg</file>
+		<file>icons/passage.jpg</file>
+		<file>icons/route.jpg</file>
+		<file>icons/Users.png</file>
+		<file>icons/booking.png</file>
+		<file>icons/download.png</file>
+		<file>icons/Ticket.jpg</file>
+	</qresource>
+</RCC>
