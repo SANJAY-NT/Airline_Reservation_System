@@ -67,7 +67,7 @@ class MainApp(QMainWindow, ui):
     #######################################################################
     ##############################Home_button#####################################
     def Login(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox_4.currentText()
@@ -136,7 +136,7 @@ class MainApp(QMainWindow, ui):
         self.tabWidget_2.setCurrentIndex(4)
 
     def User_route(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         self.tabWidget_3.setCurrentIndex(1)
         try:
@@ -186,7 +186,7 @@ class MainApp(QMainWindow, ui):
     ##################Admin_airline#####################
 
     def Airline_Search(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox.currentText()
@@ -252,7 +252,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Airline_Add(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         name = self.lineEdit.text()
         arrival = self.lineEdit_3.text()
@@ -301,7 +301,7 @@ class MainApp(QMainWindow, ui):
             self.lineEdit_15.setText('')
 
     def Airline_delete(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         id = self.lineEdit_26.text()
@@ -326,7 +326,7 @@ class MainApp(QMainWindow, ui):
     ##################Admin_passenger#####################
 
     def Passenger_Search(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox_3.currentText()
@@ -410,7 +410,7 @@ class MainApp(QMainWindow, ui):
 
 
     def Booking_search(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox_7.currentText()
@@ -503,7 +503,7 @@ class MainApp(QMainWindow, ui):
     ##################Admin_route#####################
 
     def Route_Search(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox_5.currentText()
@@ -596,7 +596,7 @@ class MainApp(QMainWindow, ui):
                 self.statusBar().showMessage('Error Displaying', 3000)
 
     def Route_add(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         from_place = self.lineEdit_22.text()
@@ -630,7 +630,7 @@ class MainApp(QMainWindow, ui):
             self.statusBar().showMessage('Route not added Wrong data', 3000)
 
     def Route_remove(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         route_id = self.lineEdit_23.text()
@@ -654,7 +654,7 @@ class MainApp(QMainWindow, ui):
     ##################Admin_User#####################
 
     def User_Search(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox_6.currentText()
@@ -747,7 +747,7 @@ class MainApp(QMainWindow, ui):
                 self.statusBar().showMessage('Error Displaying', 3000)
 
     def User_add(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         name = self.lineEdit_65.text()
@@ -810,7 +810,7 @@ class MainApp(QMainWindow, ui):
             self.statusBar().showMessage('User with Same Name exists', 3000)
 
     def User_remove(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         user_id = self.lineEdit_64.text()
@@ -833,7 +833,7 @@ class MainApp(QMainWindow, ui):
     ######################Admin_admin##########################
 
     def Admin_add(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         admin_name = self.lineEdit_72.text()
@@ -883,7 +883,7 @@ class MainApp(QMainWindow, ui):
             self.statusBar().showMessage('Admin not Deleted ', 3000)
 
     def Admin_details(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         key = self.comboBox_15.currentText()
@@ -976,7 +976,7 @@ class MainApp(QMainWindow, ui):
                 self.statusBar().showMessage('Error Displaying', 3000)
 
     def Admin_Update(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         admin_name = self.lineEdit_76.text()
@@ -1014,7 +1014,7 @@ class MainApp(QMainWindow, ui):
     ##################User_route#####################
 
     def User_Route_Search(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         from_key = self.comboBox_16.currentText()
@@ -1085,7 +1085,7 @@ class MainApp(QMainWindow, ui):
     ##################User_Booking#####################
 
     def User_Booking(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         name = self.lineEdit_101.text()
@@ -1180,7 +1180,7 @@ class MainApp(QMainWindow, ui):
             self.lineEdit_81.setText('')
 
     def fun1(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         print('hifun1')
         name1 = self.lineEdit_107.text()
@@ -1210,7 +1210,7 @@ class MainApp(QMainWindow, ui):
             self.statusBar().showMessage("Booking unsuccessful  ", 5000)
 
     def fun2(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         print('hifun2')
         name21 = self.lineEdit_111.text()
@@ -1251,7 +1251,7 @@ class MainApp(QMainWindow, ui):
             self.statusBar().showMessage("Booking unsuccessful  ", 5000)
 
     def fun3(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         print('hifun2')
         name31 = self.lineEdit_117.text()
@@ -1306,7 +1306,7 @@ class MainApp(QMainWindow, ui):
 
 
     def User_Cancel_Booking(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         name = self.lineEdit_103.text()
@@ -1367,7 +1367,7 @@ class MainApp(QMainWindow, ui):
     ##################User_Ticket#####################
 
     def User_generate(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         name = self.lineEdit_105.text()
@@ -1443,7 +1443,7 @@ class MainApp(QMainWindow, ui):
     ##################User_Setting#####################
 
     def User_details(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         name = self.lineEdit_79.text()
         key = self.comboBox_2.currentText()
@@ -1482,7 +1482,7 @@ class MainApp(QMainWindow, ui):
             self.statusBar().showMessage('Details not updated', 3000)
 
     def User_password(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
         name1 = self.lineEdit_97.text()
         password = self.lineEdit_98.text()
@@ -1519,7 +1519,7 @@ class MainApp(QMainWindow, ui):
     ##################New_User#####################
 
     def Welcome_User_details(self):
-        self.db = mysql.connector.connect(host='localhost', user='root', passwd="Sanjay12120#", db="airline")
+        self.db = mysql.connector.connect(host='localhost', user='root', passwd="password", db="airline")
         self.cur = self.db.cursor()
 
         name = self.lineEdit_89.text()
